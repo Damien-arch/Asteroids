@@ -4,31 +4,27 @@ using UnityEngine;
 
 public class TestMovement : MonoBehaviour
 {
-    // Update is called once per frame
+    public float thrustenergy = 6.0f;
+    public float rotationspeed = 240.0f;
+    public float maxspeed = 12.0f;
+
+    private Rigidbody2D rb;
+
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
     void Update()
     {
-        // Move Up with 'W'
+        float rotationInput = -Input.GetAxis("Horizontal");
+        transform.Rotate(Vector3.forward * rotationInput * rotationspeed * Time.deltaTime);
+
         if (Input.GetKey(KeyCode.W))
         {
-            transform.position += Vector3.up * Time.deltaTime * 10.0f;
-        }
-
-        // Move Left with 'A'
-        if (Input.GetKey(KeyCode.A))
-        {
-            transform.position += Vector3.left * Time.deltaTime * 10.0f;
-        }
-
-        // Move Down with 'S'
-        if (Input.GetKey(KeyCode.S))
-        {
-            transform.position += Vector3.down * Time.deltaTime * 10.0f;
-        }
-
-        // Move Right with 'D'
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.position += Vector3.right * Time.deltaTime * 10.0f;
+            Vector2 thrust = transform.up * thrustenergy;
+            rb.AddForce(thrust);
         }
     }
 }
