@@ -298,6 +298,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &883293121 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2663537318543065441, guid: 68ec7097484905b47a2d1b9b278b66ba, type: 3}
+  m_PrefabInstance: {fileID: 8477503306552390940}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &883293127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883293121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bfc1a96788c7d64b9a66f477b634e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionSound: {fileID: 0}
 --- !u!1001 &2054017057556063725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -309,6 +327,10 @@ PrefabInstance:
     - target: {fileID: 197074542113648597, guid: 5d39c29d21cf3594d9e292314ceffcdf, type: 3}
       propertyPath: m_Name
       value: Small
+      objectReference: {fileID: 0}
+    - target: {fileID: 197074542113648597, guid: 5d39c29d21cf3594d9e292314ceffcdf, type: 3}
+      propertyPath: m_TagString
+      value: Astroid
       objectReference: {fileID: 0}
     - target: {fileID: 6369683724781776647, guid: 5d39c29d21cf3594d9e292314ceffcdf, type: 3}
       propertyPath: m_Sprite
@@ -431,6 +453,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium
       objectReference: {fileID: 0}
+    - target: {fileID: 6093692029010029984, guid: aa5337a115f0aaf4e95c2832b7c7bcf5, type: 3}
+      propertyPath: m_TagString
+      value: Astroid
+      objectReference: {fileID: 0}
     - target: {fileID: 6654377599685035949, guid: aa5337a115f0aaf4e95c2832b7c7bcf5, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -479,6 +505,10 @@ PrefabInstance:
     - target: {fileID: 3765486727045308822, guid: b5316a367070fb04e8e3684158a50330, type: 3}
       propertyPath: m_Name
       value: Large
+      objectReference: {fileID: 0}
+    - target: {fileID: 3765486727045308822, guid: b5316a367070fb04e8e3684158a50330, type: 3}
+      propertyPath: m_TagString
+      value: Astroid
       objectReference: {fileID: 0}
     - target: {fileID: 6100955524128706505, guid: b5316a367070fb04e8e3684158a50330, type: 3}
       propertyPath: m_LocalScale.x
@@ -585,6 +615,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Test
       objectReference: {fileID: 0}
+    - target: {fileID: 2663537318543065441, guid: 68ec7097484905b47a2d1b9b278b66ba, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7763209276356504363, guid: 68ec7097484905b47a2d1b9b278b66ba, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -592,7 +626,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2663537318543065441, guid: 68ec7097484905b47a2d1b9b278b66ba, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 883293127}
   m_SourcePrefab: {fileID: 100100000, guid: 68ec7097484905b47a2d1b9b278b66ba, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
