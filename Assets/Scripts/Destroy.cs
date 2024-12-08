@@ -7,10 +7,10 @@ public class Destroy : MonoBehaviour
     {
         StartCoroutine(DestroyAfterDelay(2f));
     }
-    
-    // Update is called once per frame
-    void Update()
+
+    IEnumerator DestroyAfterDelay(float delay)
     {
-        
+        yield return new WaitForSeconds(delay);
+        Destroy(gameObject);
     }
 }
