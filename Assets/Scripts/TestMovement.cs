@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class TestMovement : MonoBehaviour
 {
@@ -11,12 +12,23 @@ public class TestMovement : MonoBehaviour
     private Rigidbody2D rb;
 
     public AudioClip engines;
-    private AudioSource audiosource;
+    private AudioSource audioSource;
 
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            Debug.LogError("No audio found");
+
+        }
+        else
+        {
+            audioSource.loop = true;
+        }
+
 
     }
 

@@ -9,7 +9,7 @@ public class Fire : MonoBehaviour
     private AudioSource shootingAudioSource;
     void Start()
     {
-
+        shootingAudioSource = gameObject.AddComponent<AudioSource>();
     }
 
     void Update()
