@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class TestMovement : MonoBehaviour
 {
-    public float thrustenergy = 6.0f;
-    public float rotationspeed = 240.0f;
+    public float thrustenergy = 3.0f;
+    public float rotationspeed = 120.0f;
     public float maxspeed = 12.0f;
 
     private Rigidbody2D rb;
@@ -20,6 +20,7 @@ public class TestMovement : MonoBehaviour
 
     }
 
+    [System.Obsolete]
     void Update()
     {
         float rotationInput = -Input.GetAxis("Horizontal");
@@ -30,5 +31,15 @@ public class TestMovement : MonoBehaviour
             Vector2 thrust = transform.up * thrustenergy;
             rb.AddForce(thrust);
         }
+
+        if (rb.velocity.magnitude > maxspeed)
+        {
+            rb.velocity = rb.velocity.normalized * maxspeed;
+        }
+    }
+    [System.Obsolete]
+    void FixedUpdate()
+    {
+        rb.velocity *= 0.99f;
     }
 }

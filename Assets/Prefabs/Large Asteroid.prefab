@@ -10,7 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6100955524128706505}
   - component: {fileID: 3409136225287933051}
-  - component: {fileID: -2656995092439326653}
+  - component: {fileID: 6363675002960890866}
+  - component: {fileID: 5433335876114035356}
+  - component: {fileID: 600048417943733848}
   m_Layer: 0
   m_Name: Large Asteroid
   m_TagString: Untagged
@@ -88,7 +90,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-2656995092439326653
+--- !u!114 &6363675002960890866
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,9 +99,50 @@ MonoBehaviour:
   m_GameObject: {fileID: 3765486727045308822}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 410f15044f2d1ed4f8acc69fb9f2e63e, type: 3}
+  m_Script: {fileID: 11500000, guid: 307af86c521e72a4a9425e3553103691, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidPrefab: {fileID: 0}
-  spawnRate: 4
-  spawnDistance: 4
+  speed: 4
+  rotationSpeed: 30
+  smallerAsteroids:
+  - {fileID: 6093692029010029984, guid: aa5337a115f0aaf4e95c2832b7c7bcf5, type: 3}
+  splitTime: 1
+--- !u!114 &5433335876114035356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3765486727045308822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cdd9991da401f341b146987484f1417, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &600048417943733848
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3765486727045308822}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
