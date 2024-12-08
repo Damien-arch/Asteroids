@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7696249029386569358}
   - component: {fileID: 6369683724781776647}
+  - component: {fileID: -2447287708712439098}
   m_Layer: 0
   m_Name: Small  Asteroid
   m_TagString: Untagged
@@ -87,3 +88,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-2447287708712439098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197074542113648597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 410f15044f2d1ed4f8acc69fb9f2e63e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  asteroidPrefab: {fileID: 0}
+  spawnRate: 4
+  spawnDistance: 4
