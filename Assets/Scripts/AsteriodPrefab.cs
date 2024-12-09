@@ -22,7 +22,7 @@ public class AsteroidPrefab : MonoBehaviour
     {
         transform.Rotate(Vector3.forward * rotationSpeed * Time.deltaTime);
     }
-
+    
     public void Split()
     {
         if (smallerAsteroids.Length > 0)
@@ -35,4 +35,5 @@ public class AsteroidPrefab : MonoBehaviour
 
         Destroy(gameObject);
     }
+    
 }
