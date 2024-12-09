@@ -12,10 +12,12 @@ GameObject:
   - component: {fileID: 3409136225287933051}
   - component: {fileID: 6363675002960890866}
   - component: {fileID: 5433335876114035356}
+  - component: {fileID: 7854091951815327572}
   - component: {fileID: 600048417943733848}
+  - component: {fileID: 4481661190507600896}
   m_Layer: 0
   m_Name: Large Asteroid
-  m_TagString: Untagged
+  m_TagString: Asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,6 +121,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cdd9991da401f341b146987484f1417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7854091951815327572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3765486727045308822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af11863ff295f1c46ac11a768ff67417, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &600048417943733848
 Rigidbody2D:
   serializedVersion: 5
@@ -146,3 +160,40 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!70 &4481661190507600896
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3765486727045308822}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.62, y: 0.66999996}
+  m_Direction: 0
