@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7763209276356504363}
   - component: {fileID: 3439544497920813062}
   - component: {fileID: -8869414473539985215}
+  - component: {fileID: 3879018634410612838}
   - component: {fileID: 6602811485106010172}
   - component: {fileID: 5366855972001657305}
   - component: {fileID: 1534281873511938260}
@@ -107,8 +108,8 @@ MonoBehaviour:
   thrustenergy: 6
   rotationspeed: 240
   maxspeed: 12
-  rb: {fileID: 0}
   engines: {fileID: 0}
+  wingsSound: {fileID: 0}
 --- !u!114 &-8869414473539985215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,6 +126,18 @@ MonoBehaviour:
   launchPoint: {fileID: 72498577549602299}
   bulletSpeed: 10
   shootSound: {fileID: 0}
+--- !u!114 &3879018634410612838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2663537318543065441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bfc1a96788c7d64b9a66f477b634e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &6602811485106010172
 Rigidbody2D:
   serializedVersion: 5
