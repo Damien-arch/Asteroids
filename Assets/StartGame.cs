@@ -1,6 +1,4 @@
 using UnityEngine;
-using System.Collections.Generic;
-using system.Collections;
 using UnityEngine.SceneManagement;
 
 
