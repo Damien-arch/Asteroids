@@ -27,9 +27,9 @@ public class AsteroidPrefab : MonoBehaviour
     {
         if (smallerAsteroids.Length > 0)
         {
-            foreach (var asteroidPrefab in smallerAsteroids)
+            foreach (var AsteroidPrefab in smallerAsteroids)
             {
-                Instantiate(asteroidPrefab, transform.position, Quaternion.identity);
+                Instantiate(AsteroidPrefab, transform.position, Quaternion.identity);
             }
         }
 

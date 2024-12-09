@@ -364,6 +364,11 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 6602811485106010172, guid: 68ec7097484905b47a2d1b9b278b66ba, type: 3}
   m_PrefabInstance: {fileID: 8477503306552390940}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &883293138 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 72498577549602299, guid: 68ec7097484905b47a2d1b9b278b66ba, type: 3}
+  m_PrefabInstance: {fileID: 8477503306552390940}
+  m_PrefabAsset: {fileID: 0}
 --- !u!82 &883293139
 AudioSource:
   m_ObjectHideFlags: 0
@@ -461,6 +466,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1595021471
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1595021472}
+  m_Layer: 0
+  m_Name: Fire point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1595021472
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595021471}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 883293138}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &223946396948346284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -838,6 +874,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8869414473539985215, guid: 68ec7097484905b47a2d1b9b278b66ba, type: 3}
+      propertyPath: launchPoint
+      value: 
+      objectReference: {fileID: 1595021472}
     - target: {fileID: 72498577549602299, guid: 68ec7097484905b47a2d1b9b278b66ba, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -908,7 +948,10 @@ PrefabInstance:
       objectReference: {fileID: 6128299156075563123, guid: 5181bd16fcf8ba049a201ea0cbc6a8cd, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 72498577549602299, guid: 68ec7097484905b47a2d1b9b278b66ba, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1595021472}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2663537318543065441, guid: 68ec7097484905b47a2d1b9b278b66ba, type: 3}
       insertIndex: 3

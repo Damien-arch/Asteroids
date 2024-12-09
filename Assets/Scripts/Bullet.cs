@@ -7,14 +7,10 @@ public class Bullet : MonoBehaviour
         if (other.CompareTag("Asteroid"))
         {
             Destroy(gameObject);
-            Asteroids asteroid = other.GetComponent<Asteroids>();
-            if (asteroid != null)
+            AsteroidPrefab asteriodComponent = other.GetComponent<AsteroidPrefab>();
+            if (asteriodComponent != null)
             {
-
-                //asteroid.Split();
-
-              
-
+                asteriodComponent.Split();
             }
         }
     }
