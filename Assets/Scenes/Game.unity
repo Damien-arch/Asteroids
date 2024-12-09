@@ -601,58 +601,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-<<<<<<< Updated upstream
 --- !u!1 &1348327213
 GameObject:
-=======
-<<<<<<< HEAD
---- !u!70 &883293146
-CapsuleCollider2D:
-=======
---- !u!1 &1348327213
-GameObject:
->>>>>>> 58cf4d6353e18a056e77a69188c1797c7460927f
->>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-  m_GameObject: {fileID: 883293121}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.96, y: 0.89}
-  m_Direction: 0
-=======
->>>>>>> Stashed changes
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1348327214}
@@ -1001,10 +955,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelName: Title
-<<<<<<< Updated upstream
-=======
->>>>>>> 58cf4d6353e18a056e77a69188c1797c7460927f
->>>>>>> Stashed changes
 --- !u!1 &1595021471
 GameObject:
   m_ObjectHideFlags: 0
@@ -1771,10 +1721,6 @@ PrefabInstance:
       propertyPath: engines
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 5366855972001657305, guid: 68ec7097484905b47a2d1b9b278b66ba, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7763209276356504363, guid: 68ec7097484905b47a2d1b9b278b66ba, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1795,9 +1741,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2663537318543065441, guid: 68ec7097484905b47a2d1b9b278b66ba, type: 3}
       insertIndex: -1
       addedObject: {fileID: 883293139}
-    - targetCorrespondingSourceObject: {fileID: 2663537318543065441, guid: 68ec7097484905b47a2d1b9b278b66ba, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 883293146}
   m_SourcePrefab: {fileID: 100100000, guid: 68ec7097484905b47a2d1b9b278b66ba, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
