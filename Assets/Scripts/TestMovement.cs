@@ -5,9 +5,9 @@ using UnityEngine.Audio;
 
 public class TestMovement : MonoBehaviour
 {
-    public float thrustenergy = 3.0f;
-    public float rotationspeed = 120.0f;
-    public float maxspeed = 12.0f;
+    public float thrustenergy = 2.0f;
+    public float rotationspeed = 90.0f;
+    public float maxspeed = 9.0f;
 
     public Rigidbody2D rb;
 

@@ -10,7 +10,11 @@ public class Bullet : MonoBehaviour
             Asteroids asteroid = other.GetComponent<Asteroids>();
             if (asteroid != null)
             {
+<<<<<<< HEAD
                 //asteroid.Split();
+=======
+              
+>>>>>>> af028333e26fef7a8820707dc587d946c151c1f3
             }
         }
     }
