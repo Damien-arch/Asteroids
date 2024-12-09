@@ -5,7 +5,7 @@ public class Destroy : MonoBehaviour
 {
     void Start()
     {
-        StartCoroutine(DestroyAfterDelay(2f));
+        //StartCoroutine(DestroyAfterDelay(2f));
     }
     
     // Update is called once per frame

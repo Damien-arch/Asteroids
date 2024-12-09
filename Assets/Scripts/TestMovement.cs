@@ -9,13 +9,13 @@ public class TestMovement : MonoBehaviour
     public float rotationspeed = 120.0f;
     public float maxspeed = 12.0f;
 
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
 
     public AudioClip engines;
     private AudioSource audioSource;
 
-
-    private void Start()
+    
+    public void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
@@ -31,7 +31,7 @@ public class TestMovement : MonoBehaviour
 
 
     }
-
+    
     [System.Obsolete]
     void Update()
     {

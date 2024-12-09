@@ -10,7 +10,7 @@ public class Bullet : MonoBehaviour
             Asteroids asteroid = other.GetComponent<Asteroids>();
             if (asteroid != null)
             {
-                asteroid.Split();
+                //asteroid.Split();
             }
         }
     }
